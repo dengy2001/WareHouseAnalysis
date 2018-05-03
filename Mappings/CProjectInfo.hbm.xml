@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" 
+                   assembly="WareHouseAnalysis" 
+                   namespace="WareHouseAnalysis.Domain">
+	<!-- more mapping info here -->
+	<class name="CProjectInfo" table="ProjectInfo">
+		<id name="ProjectID" column="ProjectID" >
+		</id>
+		<property name="ProjectName" column="ProjectName" />
+		<property name="BuildArea" column="BuildArea" />
+		<property name="Contractor" column="Contractor" />
+		<property name="ProjectDays" column="ProjectDays" />
+		<property name="Memo" column="Memo" />
+		</class>
+  
+</hibernate-mapping>
