@@ -101,7 +101,11 @@ namespace WareHouseAnalysis.BLL
 		public static int GetMaxProjectID()
 		{
 			int i_rtn = 0;
-			i_rtn = Convert.ToInt32(SQLiteHelper.ExecuteScalar("SELECT max(ProjectID) FROM ProjectInfo"));
+			object tO = SQLiteHelper.ExecuteScalar("SELECT max(ProjectID) FROM ProjectInfo");
+			if(tO != DBNull.Value)
+			{
+				i_rtn = Convert.ToInt32(tO);
+			}			
 			return i_rtn;
 		}
 		

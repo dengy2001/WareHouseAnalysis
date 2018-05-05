@@ -212,6 +212,7 @@ namespace WareHouseAnalysis
 			this.buttonDel.TabIndex = 2;
 			this.buttonDel.Text = "删除";
 			this.buttonDel.UseVisualStyleBackColor = true;
+			this.buttonDel.Click += new System.EventHandler(this.ButtonDelClick);
 			// 
 			// buttonModify
 			// 
@@ -221,6 +222,7 @@ namespace WareHouseAnalysis
 			this.buttonModify.TabIndex = 2;
 			this.buttonModify.Text = "修改";
 			this.buttonModify.UseVisualStyleBackColor = true;
+			this.buttonModify.Click += new System.EventHandler(this.ButtonModifyClick);
 			// 
 			// buttonAdd
 			// 
